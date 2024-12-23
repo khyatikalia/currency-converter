@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="h-screen w-screen flex justify-center items-center bg-amber-100"
+    >
+      <div
+        class="main_container flex flex-col justify-center items-center bg-white space-y-4 p-10 rounded-xl min-w-1/2"
+      >
+        <span class="text-xl font-s font-bold">Currency Converter</span>
+        <div class="amount_container flex flex-col w-full">
+          <span>Enter Amount:</span>
+          <input
+            id="input"
+            type="text"
+            class="border-2 border-gray-400 p-2 rounded-lg"
+          />
+        </div>
+        <div class="dropdown flex w-full justify-between items-center mt-2">
+          <div class="from">
+            <span>From</span>
+            <div
+              class="select_container flex w-60 justify-center items-center rounded-lg border-2 border-gray-400"
+            >
+              <img class="max-w-8" src="https://flagsapi.com/US/flat/64.png" />
+              <select
+                class="w-48"
+                id="curr_select_from"
+                name="from rounded-lg"
+              ></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left text-xl mt-5 px-7"></i>
+          <div class="to">
+            <span>To</span>
+            <div
+              class="select_container flex w-60 justify-center items-center rounded-lg border-2 border-gray-400"
+            >
+              <img class="max-w-8" src="https://flagsapi.com/IN/flat/64.png" />
+              <select
+                class="w-48"
+                id="curr_select_to"
+                name="to rounded-lg "
+              ></select>
+            </div>
+          </div>
+        </div>
+        <di
+          class="msg_container text-lg w-full rounded-xl cursor-pointer font-extrabold py-5 text-center"
+        >
+          1 USD = 80 INR
+        </di>
+      </div>
+    </div>
+    <script type="module" src="./codes.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
